@@ -6,7 +6,7 @@ I used the Lahman Baseball Database. I queried the team data in MySQL Workbench,
 
 The model takes two inputs, runs scored per game and runs allowed per game, and predicts total wins. I trained it on most of the data and kept a portion aside to test it on teams it hadn't seen. On that test data it got an R² of 0.892, a mean absolute error of 2.86 wins, and a root mean squared error of 3.62 wins. In other words, it explains about 89% of the differences in team wins, and a typical prediction is off by less than 3 wins.
 
-The fitted equation is roughly: wins = 82.8 + 16.1 x (runs scored per game) - 16.4 x (runs allowed per game). Scoring one more run per game adds about 16 wins over a season, and allowing one more run per game costs about 16. That lines up with the baseball rule of thumb that about 10 runs equals one win.
+The fitted equation is roughly: wins = 82.8 + 16.1 x (runs scored per game) - 16.4 x (runs allowed per game). Scoring one more run per game adds about 16 wins over a season, and allowing one more run per game costs about 16. 
 
 The model only describes a season using that same season's runs. It does not forecast future seasons, and it ignores things like defense, injuries, and schedule strength. Inputs also have to be per game, so season totals need to be divided by games played first.
 
