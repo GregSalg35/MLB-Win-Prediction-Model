@@ -13,3 +13,6 @@ The model only describes a season using that same season's runs. It does not for
 To run it, install pandas, Numpy, Matplotlib, and Scikit-learn, then run `python finalizer.py`. It prints the coefficients and error numbers and shows a graph of predicted wins vs. actual wins.
 
 Data source: Lahman Baseball Database (https://sabr.org/lahman-database/)
+
+
+![Predicted vs. actual wins](predicted_vs_actual_wins.png)
